@@ -6,6 +6,9 @@
 package com.sg.contactlistspringmvc.model;
 
 import java.util.Objects;
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotEmpty;
 
 /**
  *
@@ -14,10 +17,20 @@ import java.util.Objects;
 public class Contact {
 
     private long contactId;
+    @NotEmpty(message = "You must supply a value for First Name.")
+    @Length(max = 50, message = "First Name must be no more than 50 characters in length.")
     private String firstName;
+    @NotEmpty(message = "You must supply a value for Last Name.")
+    @Length(max = 50, message = "Last Name must be no more than 50 characters in length.")
     private String lastName;
+    @NotEmpty(message = "You must supply a value for Company.")
+    @Length(max = 50, message = "Company must be no more than 50 characters in length.")
     private String company;
+    @NotEmpty(message = "You must supply a value for Phone.")
+    @Length(max = 10, message = "Phone must be no more than 10 characters in length.")
     private String phone;
+    @Email(message = "Please enter a valid email address.")
+    @Length(max = 50, message = "Email must be no more than 50 characters in length.")
     private String email;
 
     public long getContactId() {
