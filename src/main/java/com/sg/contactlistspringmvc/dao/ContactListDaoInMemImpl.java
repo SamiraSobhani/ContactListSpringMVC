@@ -6,6 +6,7 @@
 package com.sg.contactlistspringmvc.dao;
 
 import com.sg.contactlistspringmvc.model.Contact;
+import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;

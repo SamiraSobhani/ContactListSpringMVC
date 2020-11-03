@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ContactListSpringMVC:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ContactListSpringMVC</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-mvc-webapp.war">
+      <element id="artifact" artifact-name="ContactListSpringMVC:war exploded" />
+    </root>
+  </artifact>
+</component>
